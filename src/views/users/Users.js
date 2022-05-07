@@ -6,7 +6,7 @@ import { Wrapper } from "./Users.style";
 const Users = () => {
     return (
         <Wrapper container>
-            <Grid item xs={12} sm={12} md={6}>
+            <Grid item xs={12} md={6}>
                 <Typography
                     textAlign="center"
                     variant="h2"
@@ -14,9 +14,9 @@ const Users = () => {
                     Users
                 </Typography>
             </Grid>
-            <Grid item xs={12} sm={12} md={6} container spacing={2}>
+            <Grid container item xs={12} md={6} spacing={2} justifyContent="center">
                 {USERS.map(user => (
-                    <Grid item xs={6} sm={4} md={3} lg={2} key={user.id}>
+                    <Grid item key={user.id}>
                         <User firstName={user.name} lastName={user.lastName} />
                     </Grid>
                 ))}

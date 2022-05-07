@@ -6,7 +6,7 @@ export const Div = styled("div")({
 
 export const Img = styled("img")({
     maxHeight: '15rem',
-    width: '100%',
+    width: '10rem',
 });
 
 export const Name = styled("h3")({

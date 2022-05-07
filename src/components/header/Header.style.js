@@ -11,4 +11,7 @@ export const Container = styled("div")({
     alignItems: 'center',
     borderBottomLeftRadius: '50%',
     borderBottomRightRadius: '50%',
+    position: 'fixed',
+    left: '50%',
+    transform: 'translateX(-50%)',
 });

@@ -2,16 +2,21 @@ import styled from "@emotion/styled";
 
 export const Wrapper = styled("div")({
     backgroundColor: '#000',
-    height: 'calc(100vh - 18rem)',
+    height: 'calc(100vh - 13rem)',
     position: 'relative',
+    zIndex: 0,
+    width: '100%'
 });
 
-export const Img = styled("img", {
-    shouldForwardProp: (prop) => prop !== 'top' && prop !== 'left',
-})(({ top, left }) => ({
-    width: '10rem',
-    height: '10rem',
-    position: "absolute",
+export const Text = styled("div", {
+    shouldForwardProp: (prop) => prop !== 'top' && prop !== 'left' && prop !== 'color',
+})(({ top, left, color }) => ({
+    width: '20rem',
+    fontSize: '10rem',
+    position: 'absolute',
+    zIndex: 0,
     top: top,
     left: left,
+    color: color,
+    lineHeight: 1,
 }));
